@@ -1,0 +1,122 @@
+/* Estilo global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+  background-color: #f4f7fa; /* Fundo leve */
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0 0 1em;
+}
+
+/* Estilo de botão */
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Estilo de input */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Estilos de layout do container */
+.container {
+  max-width: 600px;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1, .container h2 {
+  color: #2c3e50;
+}
+
+/* Estilo para listas de itens */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.8em 1em;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  margin-bottom: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #f0f3f5;
+}
+
+li button {
+  padding: 0.4em 0.8em;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-shadow: none;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
